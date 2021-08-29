@@ -1,0 +1,45 @@
+#nav{
+    display:block ;
+}
+
+#home{
+    background-image: url(https://images.unsplash.com/photo-1573930767476-405fa79dc359?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    z-index: -99;
+}
+#home-container{
+    position: absolute;
+}
+#home-content{
+    z-index: 100;
+}
+#overlay{
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.555);
+    backdrop-filter: blur(5px);
+    z-index:99;
+    height: 100vh;
+    width: 100%;
+}
+
+@media screen and (max-width: 780px) {
+    #header{
+        position: fixed;
+        width: 100%;
+        color: white;
+        z-index: 100;
+    }
+    #logo{
+        color: white;
+        
+    }
+    #nav{
+        display:none ;
+    }
+    #contact-btn{
+        display:none;
+    }
+    
+}
